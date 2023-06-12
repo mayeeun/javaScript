@@ -1,0 +1,49 @@
+### 2023.06.12
+자바스크립트 복습
+
+객체
+1. 네이티브 객체(ECMAScript)
+  - 내장 생성자 객체
+  - 내장 객체
+2. 호스트 객체 - 런타임 환경에 따른 제공 객체
+  - 웹 브라우저 객체
+  
+웹 브라우저 객체
+클라이언트 측 자바스크립트
+1. 웹 브라우저에서 자바스크립트가 하는 일
+2. 웹 브라우저에서 자바스크립트 실행 순서
+서버 응답(Content-Type:text/html; HTML 텍스트) -> 브라우저 -> 번역 -> document 객체 변환, Tree 구조로 재구성(DOM Tree) -> DOMContentLoaded 이벤트 발생(DOM 만 구성 완료) -> load 이벤트 발생(기타 자원들 로드 완료 - 이미지, css, js ...)
+3. async 와 defer 속성
+  - defer : DOM 구성 완료 되면(DOMContentLoaded 이벤트 발생 후에) 스크립트 실행
+  - async : 비동기 처리 
+this 바인딩 : 함수를 호출한 객체가 this .. 
+4. CSS와 랜더링
+5. 웹 브라우저 랜더링 엔진과 자바스크립트 앤진
+
+window 객체
+1. Window 객체의 주요 프로퍼티
+   console
+    .log(...)
+    .dir(...)
+    .error(...)
+    .trace();
+    .time()
+    .timeEnd()
+참고) this == self == window
+parent : 부모 창이 없으면 window
+
+inner : 스크롤바를 제외한 창의 너비, 높이
+innerWidth
+innerHeight
+outer : 스크롤바를 포함한 창의 너비, 높이
+outerWidth
+outerHeight
+page : 스크롤한 위치
+pageXOffSet : 가로축 스크롤 위치
+pageYOffSet : 세로축 스크롤 위치
+
+창 제어하기
+1. 창 여닫기
+open()
+close()
+2. 창 제어하기
