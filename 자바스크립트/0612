@@ -42,6 +42,19 @@ page : 스크롤한 위치
 pageXOffSet : 가로축 스크롤 위치
 pageYOffSet : 세로축 스크롤 위치
 
+2. Window 객체의 주요 메서드
+alert("메시지")
+confirm() : 확인, 취소 대화상자
+prompt() : 입력 대화상자
+setTimeout(function() {
+  //지연 실행 될 코드 
+}, 지연시간); // 지연 시간 1초 - 1000
+
+Non-blocking
+참고) 싱글 쓰레드 모델
+
+
+
 창 제어하기
 1. 창 여닫기
 open()
